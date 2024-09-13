@@ -1,0 +1,10 @@
+os: linux
+language: c
+sudo: false
+script:
+  - clang -coverage main.c arithmetic.c -o main
+  - ./main
+#  - python main.py
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
