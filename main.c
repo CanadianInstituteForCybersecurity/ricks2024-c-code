@@ -18,7 +18,7 @@ int main()
 	y = 7;
 
 	//z = sum(6, 7);
-	//z = add(6, 7);
+	z = add(6, 7);
 	z = mul(x, y);
 
 	printf("Result = %d\n", z);
